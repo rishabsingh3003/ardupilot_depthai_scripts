@@ -1,0 +1,3 @@
+[submodule "IOT/submodules/depthai-spi-api"]
+	path = IOT/submodules/depthai-spi-api
+	url = https://github.com/luxonis/depthai-spi-api.git
