@@ -83,7 +83,7 @@ def create_pipeline():
     spiOut.setBusId(0)
     spiOut.input.setBlocking(False)
     spiOut.input.setQueueSize(4)
-
     objectTracker.out.link(spiOut.input)
+
     return pipeline
 

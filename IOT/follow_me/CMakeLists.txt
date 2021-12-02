@@ -10,6 +10,7 @@ include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 
 set(EXTRA_COMPONENT_DIRS
     ../submodules
+    ../libraries/serial_interface
 )
 
 include_directories("../libraries")

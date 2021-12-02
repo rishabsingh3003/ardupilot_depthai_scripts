@@ -11,7 +11,7 @@ from pipeline import *
 
 
 # Connect to device and start pipeline
-with dai.Device(create_pipeline()) as device:
+with dai.Device(create_pipeline(), usb2Mode=True) as device:
     preview = device.getOutputQueue("preview", 4, False)
     tracklets = device.getOutputQueue("tracklets", 4, False)
 
