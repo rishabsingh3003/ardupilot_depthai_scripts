@@ -53,9 +53,21 @@ def create_pipeline():
     config.calculationAlgorithm = dai.SpatialLocationCalculatorAlgorithm.MIN
 
     # Set ROI
-    for i in range(9):
+    for i in range(3):
+        topLeft = dai.Point2f((i%3)*0.3, 0.20)
+        bottomRight = dai.Point2f(((i%3)+1)*0.3, (int(i/3) + 1)*0.3)
+        config.roi = dai.Rect(topLeft, bottomRight)
+        spatialLocationCalculator.initialConfig.addROI(config)
+
+    for i in range(3,6):
         topLeft = dai.Point2f((i%3)*0.3, (int(i/3))*0.3)
         bottomRight = dai.Point2f(((i%3)+1)*0.3, (int(i/3) + 1)*0.3)
+        config.roi = dai.Rect(topLeft, bottomRight)
+        spatialLocationCalculator.initialConfig.addROI(config)
+
+    for i in range(6,9):
+        topLeft = dai.Point2f((i%3)*0.3, (int(i/3))*0.3)
+        bottomRight = dai.Point2f(((i%3)+1)*0.3, 0.8)
         config.roi = dai.Rect(topLeft, bottomRight)
         spatialLocationCalculator.initialConfig.addROI(config)
 
