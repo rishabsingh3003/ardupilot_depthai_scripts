@@ -1,6 +1,8 @@
 # DepthAI Scripts for ArduPilot
-This repository contains scripts as well as instructions on how to integrate DepthAI Cameras with ArduCopter. 
+This repository contains scripts as well as instructions on how to integrate DepthAI Cameras with ArduCopter.
 Currently, only the IoT series of cameras are supported as they can be used in a plug-and-play scenario without any additional companion computer.
+
+![Demo](IOT/docs/images/body_track.gif)
 
 ## Installation for IOT devices
 

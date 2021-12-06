@@ -47,6 +47,8 @@ idf.py -p /dev/ttyUSB0  flash monitor
 ## Setting up ArduPilot
 
 1. Connect the Serial Pins and Ground to any serial port on your Flight Controller as shown below.
+![Connections](../docs/images/connections.png)
+
 2. Setup the following parameters:
 - SERIALX_PROTOCOL = 2 (MAVLink)
 - SERIAL4_BAUD = 115

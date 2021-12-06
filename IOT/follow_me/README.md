@@ -6,6 +6,8 @@
 - Please do not try this example if you are not well versed with ArduPilot
 ```
 
+![Demo](../docs/images/human_track.gif)
+
 ## Running example on IOT devices
 
 1. Plug in the camera using the supplied USB-C cable to your computer (Also attach the power cable to your wall outlet)
@@ -47,6 +49,8 @@ idf.py -p /dev/ttyUSB0  flash monitor
 ## Setting up ArduPilot
 
 1. Connect the Serial Pins and Ground to any serial port on your Flight Controller as shown below.
+![Connections](../docs/images/connections.png)
+
 2. Setup the following parameters:
 - SERIALX_PROTOCOL = 2 (MAVLink)
 - SERIAL4_BAUD = 115
